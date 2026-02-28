@@ -270,6 +270,9 @@ axios
       });
       let window_order = document.querySelector(".window-order");
       window_order.classList.remove("active");
+      window_order.querySelectorAll("ul li").forEach((item) => {
+        item.remove();
+      });
       cart();
     });
     // remove Item Event =>
